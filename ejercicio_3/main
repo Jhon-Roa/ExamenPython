@@ -1,0 +1,8 @@
+from corefiles import checkfile
+from modulos.menu import mainmenu
+
+Nproductos= {}
+productos= checkfile('productos.json', Nproductos)
+
+if __name__ == '__main__':
+    mainmenu(productos)

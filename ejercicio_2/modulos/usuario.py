@@ -8,6 +8,7 @@ def addUsuario(usuarios):
         if id in usuarios:
             print('el usuario ya existe')
             os.system('pause')
+            return
         else:
             break
     nombres= str(input('ingrese los nombres del usuario :'))

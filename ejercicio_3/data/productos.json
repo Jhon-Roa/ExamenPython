@@ -1,0 +1,9 @@
+{
+    "1": {
+        "id": "1",
+        "nombre": "1",
+        "valor": 1.0,
+        "stockMin": 1,
+        "stockMax": 1
+    }
+}
