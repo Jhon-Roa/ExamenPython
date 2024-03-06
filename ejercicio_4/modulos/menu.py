@@ -1,5 +1,7 @@
 from corefiles import updatefile
 import modulos.empleado as emp
+import modulos.pago as pa
+import modulos.reportes as rep
 
 def mainmenu(Nominas):
     global NominasG
@@ -10,10 +12,11 @@ def mainmenu(Nominas):
         print('1. ingresar empleado \n2. pagar a empleado\n3. reportes\n4. Salir  ')
         op = str(input(')_'))
         if op == '1':
-            emp.AddEmpleado(Nominas)
+            emp.AddEmpleado(NominasG)
             updatefile('data.json', NominasG)
         elif op == '2':
-            pass
+            pa.PagarEmpleado(NominasG)
+            updatefile('data.json', NominasG)
         elif op == '3':
             MenuReportes()
         elif op == '4':
@@ -29,9 +32,9 @@ def MenuReportes():
         print('1. ver total pagado \n2. buscar historial colillas de pago\n3. buscar ultima colilla de pago\n4. salir ')
         op = str(input(')_'))
         if op == '1':
-            pass
+            rep.totasPagar(NominasG)
         elif op == '2':
-            pass
+            rep.historialRep(NominasG)
         elif op == '3':
             pass
         elif op == '4':

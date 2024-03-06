@@ -31,3 +31,34 @@ def searhEmpleado(nominas):
         print('no hay empleados\n¿A quien le piensas pagar?')
         os.system('pause')
         return
+
+def Try(tipo, msg):
+    while True:
+        if tipo == 'float':
+            try:
+                valor= float(input(msg))
+            except:
+                print('valor ingresado es invalido')
+                os.system('pause')
+            else:
+                return valor
+        elif tipo == 'int':
+            try:
+                valor= int(input(msg))
+            except:
+                print('valor ingresado es invalido')
+                os.system('pause')
+            else:
+                return valor
+
+def Si(msg):
+    while True:
+        os.system('cls')
+        si= str(input(msg))
+        if si == 's' or si == 'S':
+            return True
+        elif si == '':
+            return False
+        else:
+            print('no estas ingresando s/S o enter')
+            os.system('pause')

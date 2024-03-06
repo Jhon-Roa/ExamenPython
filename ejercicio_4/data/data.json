@@ -5,7 +5,17 @@
             "nombre": "jhon",
             "cargo": "Gerente",
             "salario": 1000000.0,
-            "col de pago": []
+            "col de pago": [
+                {
+                    "mes pagado": "enero",
+                    "fecha de pago": "30/01/2020",
+                    "sueldoBase": 1000000.0,
+                    "valorTotalHorasExtra": 55000,
+                    "cuotaPrestamo": 0.0,
+                    "descuentoCaf": 10000.0,
+                    "totalPagar": 1045000.0
+                }
+            ]
         }
     }
 }

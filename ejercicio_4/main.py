@@ -9,7 +9,7 @@ from modulos.menu import mainmenu
 Nominas= {
     'empleados':{}
 }
-productos= checkfile('data.json', Nominas)
+Nominas= checkfile('data.json', Nominas)
 
 if __name__ == '__main__':
     mainmenu(Nominas)
